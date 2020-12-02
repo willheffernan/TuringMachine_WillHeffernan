@@ -1,1 +1,0 @@
-python3 main.py tm_DECREMENT.txt $1 > zoutputDECREMENT.txt

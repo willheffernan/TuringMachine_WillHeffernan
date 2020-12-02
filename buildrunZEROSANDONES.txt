@@ -1,0 +1,1 @@
+python main.py tm_ZEROSANDONES.txt $1 > zoutputZEROSANDONES.txt

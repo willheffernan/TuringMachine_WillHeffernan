@@ -1,0 +1,1 @@
+python main.py tm_ADDITION.txt $1 > zoutputADDITION.txt

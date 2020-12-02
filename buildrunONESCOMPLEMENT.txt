@@ -1,0 +1,1 @@
+python main.py tm_ONESCOMPLEMENT.txt $1 > zoutputONESCOMPLEMENT.txt

@@ -1,0 +1,1 @@
+python main.py tm_PALINDROMES.txt $1 > zoutputPALINDROMES.txt

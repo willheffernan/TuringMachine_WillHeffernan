@@ -1,1 +1,1 @@
-python main.py tm_PALINDROMES.txt $1 > zoutputPALINDROMES.txt
+python3 main.py tm_PALINDROMES.txt $1 > zoutputPALINDROMES.txt

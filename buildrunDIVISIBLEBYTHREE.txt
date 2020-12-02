@@ -1,1 +1,1 @@
-python main.py tm_DIVISIBLEBYTHREE.txt $1 > zoutputDIVISIBLEBYTHREE.txt
+python3 main.py tm_DIVISIBLEBYTHREE.txt $1 > zoutputDIVISIBLEBYTHREE.txt

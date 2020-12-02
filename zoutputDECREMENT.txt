@@ -1,0 +1,141 @@
+DECREMENTSTART 0 DECREMENTSTART 0 RIGHT
+DECREMENTSTART 1 DECREMENTCARRY 0 LEFT
+DECREMENTSTART b DECREMENTMOVELEFT b LEFT
+DECREMENTCARRY 0 DECREMENTCARRY 1 LEFT
+DECREMENTCARRY b DECREMENTFINAL b RIGHT
+DECREMENTMOVELEFT 0 DECREMENTMOVELEFT 0 LEFT
+DECREMENTMOVELEFT b DECREMENTHALT b RIGHT
+START DECREMENT
+STEP:     0     STATE: DECREMENTSTART
+POS:      *
+TAPE:   b 0 0 0 1 0 1 1 b b b b b b b b b b b b b b 
+
+STEP:     1     STATE: DECREMENTSTART
+POS:        *
+TAPE:   b 0 0 0 1 0 1 1 b b b b b b b b b b b b b b 
+
+STEP:     2     STATE: DECREMENTSTART
+POS:          *
+TAPE:   b 0 0 0 1 0 1 1 b b b b b b b b b b b b b b 
+
+STEP:     3     STATE: DECREMENTSTART
+POS:            *
+TAPE:   b 0 0 0 1 0 1 1 b b b b b b b b b b b b b b 
+
+STEP:     4     STATE: DECREMENTCARRY
+POS:          *
+TAPE:   b 0 0 0 0 0 1 1 b b b b b b b b b b b b b b 
+
+STEP:     5     STATE: DECREMENTCARRY
+POS:        *
+TAPE:   b 0 0 1 0 0 1 1 b b b b b b b b b b b b b b 
+
+STEP:     6     STATE: DECREMENTCARRY
+POS:      *
+TAPE:   b 0 1 1 0 0 1 1 b b b b b b b b b b b b b b 
+
+STEP:     7     STATE: DECREMENTCARRY
+POS:    *
+TAPE:   b 1 1 1 0 0 1 1 b b b b b b b b b b b b b b 
+
+STEP:     8     STATE: DECREMENTFINAL
+POS:      *
+TAPE:   b 1 1 1 0 0 1 1 b b b b b b b b b b b b b b 
+
+FINISH DECREMENT
+
+FINAL DECREMENT STATE REACHED, HALT AND ACCEPT  b 1 1 1 0 0 1 1 b b b b b b b b b b b b b b 
+**********************************************************************
+
+START DECREMENT
+STEP:     0     STATE: DECREMENTSTART
+POS:      *
+TAPE:   b 1 1 1 0 0 1 1 b b b b b b b b b b b b b b 
+
+STEP:     1     STATE: DECREMENTCARRY
+POS:    *
+TAPE:   b 0 1 1 0 0 1 1 b b b b b b b b b b b b b b 
+
+STEP:     2     STATE: DECREMENTFINAL
+POS:      *
+TAPE:   b 0 1 1 0 0 1 1 b b b b b b b b b b b b b b 
+
+FINISH DECREMENT
+
+FINAL DECREMENT STATE REACHED, HALT AND ACCEPT  b 0 1 1 0 0 1 1 b b b b b b b b b b b b b b 
+**********************************************************************
+
+START DECREMENT
+STEP:     0     STATE: DECREMENTSTART
+POS:      *
+TAPE:   b 0 0 0 0 0 0 0 b b b b b b b b b b b b b b 
+
+STEP:     1     STATE: DECREMENTSTART
+POS:        *
+TAPE:   b 0 0 0 0 0 0 0 b b b b b b b b b b b b b b 
+
+STEP:     2     STATE: DECREMENTSTART
+POS:          *
+TAPE:   b 0 0 0 0 0 0 0 b b b b b b b b b b b b b b 
+
+STEP:     3     STATE: DECREMENTSTART
+POS:            *
+TAPE:   b 0 0 0 0 0 0 0 b b b b b b b b b b b b b b 
+
+STEP:     4     STATE: DECREMENTSTART
+POS:              *
+TAPE:   b 0 0 0 0 0 0 0 b b b b b b b b b b b b b b 
+
+STEP:     5     STATE: DECREMENTSTART
+POS:                *
+TAPE:   b 0 0 0 0 0 0 0 b b b b b b b b b b b b b b 
+
+STEP:     6     STATE: DECREMENTSTART
+POS:                  *
+TAPE:   b 0 0 0 0 0 0 0 b b b b b b b b b b b b b b 
+
+STEP:     7     STATE: DECREMENTSTART
+POS:                    *
+TAPE:   b 0 0 0 0 0 0 0 b b b b b b b b b b b b b b 
+
+STEP:     8     STATE: DECREMENTMOVELEFT
+POS:                  *
+TAPE:   b 0 0 0 0 0 0 0 b b b b b b b b b b b b b b 
+
+STEP:     9     STATE: DECREMENTMOVELEFT
+POS:                *
+TAPE:   b 0 0 0 0 0 0 0 b b b b b b b b b b b b b b 
+
+STEP:     10     STATE: DECREMENTMOVELEFT
+POS:              *
+TAPE:   b 0 0 0 0 0 0 0 b b b b b b b b b b b b b b 
+
+STEP:     11     STATE: DECREMENTMOVELEFT
+POS:            *
+TAPE:   b 0 0 0 0 0 0 0 b b b b b b b b b b b b b b 
+
+STEP:     12     STATE: DECREMENTMOVELEFT
+POS:          *
+TAPE:   b 0 0 0 0 0 0 0 b b b b b b b b b b b b b b 
+
+STEP:     13     STATE: DECREMENTMOVELEFT
+POS:        *
+TAPE:   b 0 0 0 0 0 0 0 b b b b b b b b b b b b b b 
+
+STEP:     14     STATE: DECREMENTMOVELEFT
+POS:      *
+TAPE:   b 0 0 0 0 0 0 0 b b b b b b b b b b b b b b 
+
+STEP:     15     STATE: DECREMENTMOVELEFT
+POS:    *
+TAPE:   b 0 0 0 0 0 0 0 b b b b b b b b b b b b b b 
+
+STEP:     16     STATE: DECREMENTHALT
+POS:      *
+TAPE:   b 0 0 0 0 0 0 0 b b b b b b b b b b b b b b 
+
+FINISH DECREMENT
+
+HALT AND DO NOT ACCEPT  b 0 0 0 0 0 0 0 b b b b b b b b b b b b b b 
+**********************************************************************
+

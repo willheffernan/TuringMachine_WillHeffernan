@@ -27,3 +27,6 @@ where $1 is where the input file will be given on the command line
 
 The program file and output file are hard coded into the build scripts, but the input file will
 a command line argument.
+
+I have already run "chmod +x" on the buildrun files, so the grader can run them by typing:
+./buildrunINCREMENT.txt <Name of Input File>

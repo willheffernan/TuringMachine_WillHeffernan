@@ -1,0 +1,1 @@
+python main.py tm_INCREMENT.txt $1 > zoutputINCREMENT.txt

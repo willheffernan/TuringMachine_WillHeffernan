@@ -1,0 +1,3 @@
+b111111bbbbbbbb
+b000000bbbbbbbb
+b101010bbbbbbbb
